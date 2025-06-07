@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 
 import static com.thetestingacademy.driver.DriverManager.getDriver;
 
-    public class CommonToAllTests {
+    public class CommonToAllPage {
 
-        public CommonToAllTests() {
+        public CommonToAllPage() {
             // If you want to call something before every Page Object Class call, Put your Code here");
             // Open File, Open Data Base Connection You can write code here
         }
