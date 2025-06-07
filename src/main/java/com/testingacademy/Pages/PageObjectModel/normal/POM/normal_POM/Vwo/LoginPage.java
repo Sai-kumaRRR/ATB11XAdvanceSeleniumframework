@@ -1,16 +1,18 @@
-package com.testingacademy.Pages.PageObjectModel.normal.POM;
+package com.testingacademy.Pages.PageObjectModel.normal.POM.normal_POM.Vwo;
 
 
 
-import com.thetestingacademy.utils.PropertiesReader;
-import com.thetestingacademy.utils.WaitHelpers;
+import com.testingacademy.Utils.WaitHelpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-    // Page Class
+import static com.testingacademy.Driver.DriverManager.PropertiesReader;
+
+// Page Class
     public class LoginPage {
 
         WebDriver driver;
+        private WaitHelpers WaitHelpers;
 
         public LoginPage(WebDriver driver) {
             this.driver = driver;
@@ -44,7 +46,7 @@ import org.openqa.selenium.WebDriver;
         }
 
         // Step 2 - Page Actions
-        public void loginToVWOLoginValidCreds(String user, String pwd) {
+        public void loginToVWOLoginValidCred(String user, String pwd) {
 
             driver.get(PropertiesReader.readKey("url"));
             driver.findElement(username).sendKeys(user);

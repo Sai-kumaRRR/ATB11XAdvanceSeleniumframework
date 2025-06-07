@@ -1,7 +1,7 @@
 package com.testingacademy.Driver;
 
 
-import com.thetestingacademy.utils.PropertiesReader;
+import com.testingacademy.Utils.PropertiesReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -13,6 +13,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
     public class DriverManager {
 
         public static WebDriver driver;
+        public static PropertiesReader PropertiesReader;
 
         public static WebDriver getDriver() {
             return driver;
@@ -64,4 +65,4 @@ import org.openqa.selenium.firefox.FirefoxOptions;
     }
 
 
-    }
+
